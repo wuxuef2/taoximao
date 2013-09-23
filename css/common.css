@@ -1,0 +1,209 @@
+﻿/*************************** Fit text to screen **********************************/
+.fixScreen {
+	width: 960px;
+	height: 100%;
+	margin: 0 auto;
+    min-width: 960px;
+}
+body {
+    color: #40220F;    
+    background: url("../img/bg.png") repeat scroll 0 0 transparent;
+    min-width: 960px;
+}
+/*************************** Fit text to screen **********************************/
+/**************************** common use *****************************/
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.center {
+    margin: 0 auto;
+}
+.redFont {
+    color: #E53828;
+}
+.moreHighlight {
+    color: #926134;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #7F4F21 !important;
+}
+
+.textColor {
+    color: #706453;
+}
+.lightDetailColor {
+    color: #AD8763;
+}
+.darkDetailColor {
+    color: #A18878;
+}
+
+.borderBottom {
+    border-bottom: solid 3px #C6B999;
+}
+
+.boxPadding {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.boldFont {
+    font-weight: bold;
+}
+
+.paddingLeft {
+    padding-left: 8px;
+}
+
+.transparencyRed {    
+    background: url("../img/transparency_red.png")  repeat scroll 0 0 transparent;
+}
+
+.icon {
+    height: 12px;
+}
+
+/**************************** common use *****************************/
+/**************************** head ***********************/
+    .headImg img {
+        min-width: 960px;
+    }
+
+.header {
+    font-size: 13px;
+}
+
+    .header a {
+        color: #40220F !important;
+    }
+
+.headerBox {
+    overflow: hidden;
+    line-height: 1.1em;
+}
+
+    .headerBox div {
+        float: left;
+    }
+
+    .headerBox .welcomeBox {
+        padding-left: 360px;
+    }
+
+    .headerBox .loginBox {
+        padding-left: 70px;
+    }
+
+    .headerBox .contactBox img {
+        height: 14px;
+        padding-left: 8px;
+    }
+
+
+.logoBox {
+    padding-top: 18px;
+    overflow: hidden;
+}
+
+    .logoBox .logo {
+        padding-left: 20px;
+    }
+
+        .logoBox .logo img {
+            height: 86px;
+        }
+
+    .logoBox .taoximao {
+        padding-top: 20px;
+    }
+
+    .logoBox .taoximaoUp {
+        overflow: hidden;
+    }
+
+        .logoBox .cityBox {
+            padding-top: 10px;
+        }
+
+        .logoBox .search {
+            padding-left: 80px;
+            width: 300px;
+        }
+
+            .logoBox .search .searchInput input {
+                width: 260px;
+                line-height: 1.8em;
+                padding: 2px 4px;
+                border: solid #C6B999 1px;
+            }
+
+            .logoBox .search .searchImg {
+                padding: 4px 4px 0 4px;
+                border: solid 1px #C6B999;
+                background-color: white;
+            }
+
+            .logoBox .search .searchImg img {
+                width: 18px;
+                cursor: pointer;
+            }
+
+            .logoBox .search .searchTip {
+                font-size: 12px;
+                padding-top: 5px;
+            }
+
+        .logoBox .myInformation {
+            padding-left: 40px;
+        }
+
+    .logoBox .taoximaoDown {
+    }
+
+    .logoBox .taoximaoDown .searchTip {
+        padding-left: 230px;
+        width: 280px;
+        padding-top: 4px;
+    }
+
+        .logoBox .taoximaoDown .telephone img {
+            height: 27px;
+        }
+
+        .logoBox .taoximaoDown .telephone .phoneNumber {
+            position: relative;
+            top: -33px;
+            left: 35px;
+            font-size: 20px;
+        }
+
+.nav {
+    background-color: #6A3906;
+}
+
+    .nav ul {
+        width: 780px;
+        overflow: hidden;
+    }
+
+        .nav ul li {
+            float: left;
+            padding: 20px 0;
+        }
+
+            .nav ul li a {
+                font-size: 18px;
+                color: white !important;
+                font-weight: bold;
+                padding: 20px;
+            }
+
+                .nav ul li a:hover {
+                    background-color: #885C1E;
+                    text-decoration: inherit !important;
+                }

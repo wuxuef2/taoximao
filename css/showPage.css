@@ -1,0 +1,101 @@
+.imgSlider .selection {
+    padding: 20px 0 8px 0;
+    font-size: 13px;
+    line-height: 1.4em;
+}
+
+.imgSlider .sliderBox {
+    padding: 10px 15px;
+    overflow: hidden;
+}
+
+    .imgSlider .sliderBox .showImg {
+        width: 470px;
+        height: 300px;
+    }
+
+    .imgSlider .sliderBox .detailBox {
+        width: 450px;
+        padding-left: 5px;
+    }
+
+        .imgSlider .sliderBox .detailBox .hotelName {
+            padding-top: 12px;
+            padding-bottom: 5px;
+            font-size: 18px;
+        }
+
+        .imgSlider .sliderBox .detailBox .privilege label {
+            padding-right: 18px;
+        }
+
+        .imgSlider .sliderBox .detailBox .shopHours {
+            font-size: 18px;
+        }
+
+            .imgSlider .sliderBox .detailBox .privilegePrice .someWords {
+                line-height: 2.4em;
+                font-size: 17px;
+            }
+
+            .imgSlider .sliderBox .detailBox .privilegePrice .price {
+                font-size: 28px;
+            }
+
+        .imgSlider .sliderBox .detailBox .detailTuple {
+            overflow: hidden;
+        }
+
+        .imgSlider .sliderBox .detailBox .detail {
+            font-size: 13px;
+        }
+
+            .imgSlider .sliderBox .detailBox .detail .detailTupleContentLable {
+                width: 380px;
+                overflow: hidden;
+            }
+
+            .imgSlider .sliderBox .detailBox .detail .detailTupleContentLable div {
+                float: left;
+                padding-left: 5px;
+                width: 90px;
+            }
+
+.baseInformation {
+    width: 670px;
+    padding-top: 40px;
+}
+
+    .baseInformation ul {
+        padding-left: 20px;
+        overflow: hidden;
+    }
+
+        .baseInformation ul li {
+            padding: 15px 20px 10px 20px;
+            font-size: 13px;
+            float: left;
+        }
+
+            .baseInformation ul li a {
+                color: #40220F !important;
+            }
+
+
+    .baseInformation .curSelection {
+        border-top: solid 1px #AD8763;
+        border-left: solid 1px #AD8763;
+        border-right: solid 1px #AD8763;
+        border-bottom: hidden;
+        background: url("../img/transparency_red.png")  repeat scroll 0 0 transparent;
+    }
+
+    .baseInformation .tabBody {
+        border-top: solid 1px #AD8763;
+    }
+
+.sidebar {
+    width: 240px;
+    padding-left: 20px;
+}
+
