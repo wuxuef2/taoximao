@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/reset.css" />
     <link rel="stylesheet" type="text/css" href="../css/common.css" />    
     <link rel="stylesheet" type="text/css" href="../css/showPage.css" />
+    <link rel="stylesheet" type="text/css" href="../css/slideImage.css" />
 
     <title>淘喜猫 酒店</title>
 
@@ -18,6 +19,9 @@
             document.getElementById("headImg").setAttribute("min-width", "960px");
         };
     </script>
+
+    <script type="text/javascript" src="../js/showImg.js"></script>
+    
 </head>
 <body>
     <div class="headImg center">
@@ -105,8 +109,31 @@
                 <span class="paddingLeft">广州誉威斯仃酒店</span>
             </div>
             <div class="sliderBox transparencyRed">
-                <div class="showImg left">
-                    &nbsp;
+                <div id="showImg" class="left">
+                    <div id="imgAll">
+                        <div id="imgList">
+                            <ul>
+                                <li><img src="../img/show_middle.png" alt="效果图" /></li>
+                                <li><img src="../img/food.png" alt="效果图" /></li>
+                                <li><img src="../img/show_middle.png" alt="效果图" /></li>
+                                <li><img src="../img/show_middle.png" alt="效果图" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="preBtn" class="imgBtn left">
+                        <img src="../img/left.png" alt="上一个图片" />
+                    </div>
+                    <div id="imgThumb">
+                        <ul>
+                            <li class="current left"><img src="../img/show_middle.png" alt="蚝自远方来鲜甜美味" /></li>
+                            <li class="normal left"><img src="../img/food.png" alt="蚝自远方来鲜甜美味" /></li>
+                            <li class="normal left"><img src="../img/show_middle.png" alt="蚝自远方来鲜甜美味" /></li>
+                            <li class="normal left"><img src="../img/show_middle.png" alt="蚝自远方来鲜甜美味" /></li>
+                        </ul>
+                    </div>
+                    <div id="nextBtn" class="imgBtn right">
+                        <img src="../img/right.png" alt="下一个图片" />
+                    </div>
                 </div>
                 <div class="detailBox left">
                     <div class="hotel">
