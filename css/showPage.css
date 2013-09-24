@@ -67,12 +67,11 @@
 }
 
     .baseInformation ul {
-        padding-left: 20px;
         overflow: hidden;
     }
 
         .baseInformation ul li {
-            padding: 15px 20px 10px 20px;
+            padding: 12px 20px 8px 20px;
             font-size: 13px;
             float: left;
         }
@@ -86,13 +85,125 @@
         border-top: solid 1px #AD8763;
         border-left: solid 1px #AD8763;
         border-right: solid 1px #AD8763;
-        border-bottom: hidden;
         background: url("../img/transparency_red.png")  repeat scroll 0 0 transparent;
     }
 
-    .baseInformation .tabBody {
-        border-top: solid 1px #AD8763;
+    .baseInformation .noSelection {
+        border-bottom: solid 1px #AD8763;
     }
+
+    .baseInformation .fixWidth {        
+        padding: 10px !important;
+    }
+
+    .baseInformation .tabBody {
+        background: url("../img/transparency_red.png")  repeat scroll 0 0 transparent;        
+        padding: 10px 0 10px 45px;
+    }
+
+        .baseInformation .tabBody .contentHead {
+            font-size: 13px;
+        }
+
+        .baseInformation .tabBody .outlineTuple {
+            width: 610px;
+            overflow: hidden;
+        }
+
+            .baseInformation .tabBody .outlineTuple div {
+                float: left;
+                margin: 5px 10px 5px 0;
+                width: 110px;
+                padding: 0 10px 0 15px;
+                border-right: solid 1px #AD8763;
+            }
+
+        .baseInformation .tabBody .detailInformation {
+            background: url("../img/small_line.png") repeat-x scroll;
+            padding-top: 15px;
+            font-size: 13px;
+            margin-right: 10px;
+        }
+
+            .baseInformation .tabBody .detailInformation img {
+                width: 350px;
+                margin: 0 auto;
+                display: block;
+                padding-top: 8px;
+            }
+
+        .baseInformation .tabBody .privilegeHeader {
+            overflow: hidden;
+            width: 340px;
+        }
+
+            .baseInformation .tabBody .privilegeHeader .bookFood {
+                font-size: 28px;
+                color: #960D23;
+                position: relative;
+                top: -26px;
+            }
+
+            .baseInformation .tabBody .privilegeHeader img {
+                width: 65px;
+            }
+
+            .baseInformation .tabBody .privilegeHeader .num {
+                color: #E1007F;
+                font-size: 32px;
+                font-weight: bold;
+            }
+
+        .baseInformation .tabBody .privilegeDetail {
+            color: #6E2850;
+            font-size: 13px;
+            padding-top: 15px;
+            padding-left: 20px;
+        }
+
+            .baseInformation .tabBody .privilegeDetail p {
+                padding: 2px 0;
+            }
+
+                .baseInformation .tabBody .privilegeDetail p span {
+                    padding-right: 5px;
+                }
+
+
+        .baseInformation .tabBody .book {
+            overflow: hidden;
+            
+           
+        }
+
+        .baseInformation .tabBody .giveBag {
+            font-size: 30px;
+            padding-left: 100px;
+            font-weight: bold;
+        }
+
+
+        .baseInformation .tabBody .book img {
+            width: 210px;
+            display: block;
+            margin-right: -60px;
+        }
+
+            .baseInformation .tabBody .book .bookBox {
+                margin-top: 200px;
+                padding: 5px 50px 5px 30px;
+                border-left: solid 1px #AD8763;
+                overflow: hidden;
+            }
+
+.yellowBox {
+    background: url("../img/yellowBG.png") repeat scroll;
+    padding: 12px 0px 12px 25px;
+    margin: 20px 0 20px -30px;
+    color: #6A3906;
+    font-size: 14px;
+    width: 600px;
+}
 
 .sidebar {
     width: 240px;

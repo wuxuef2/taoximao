@@ -60,12 +60,24 @@ body {
     padding-left: 8px;
 }
 
+.paddingRight {
+    padding-right: 10px;
+}
+
 .transparencyRed {    
     background: url("../img/transparency_red.png")  repeat scroll 0 0 transparent;
 }
 
 .icon {
     height: 12px;
+}
+
+.hide {
+    display: none;
+}
+
+.overflow {
+    overflow: hidden;
 }
 
 /**************************** common use *****************************/
