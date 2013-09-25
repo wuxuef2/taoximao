@@ -98,7 +98,7 @@
 
     .baseInformation .tabBody {
         background: url("../img/transparency_red.png")  repeat scroll 0 0 transparent;        
-        padding: 10px 0 10px 45px;
+        padding: 10px 0 10px 20px;
     }
 
         .baseInformation .tabBody .contentHead {
@@ -298,6 +298,108 @@
     float: left;
     width: 430px;
 }
+
+.starBox img {
+    width: 12px;
+}
+
+.detailStar {
+    float: left;
+}
+
+.starArea {
+    padding-right: 25px;
+}
+
+.starAll {
+    float: left;
+    width: 175px;
+}
+
+.starArea .detailStar .detailStartuple {
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+
+.starArea .detailStar .detailStartuple .detailTupleTitle {
+    width: 85px;
+    float: left;
+    text-align: right;
+}
+
+.starArea .detailStar .detailStartuple .detailTupleContent {
+    float: left;
+}
+
+.starAll {
+    overflow: hidden;
+    padding: 5px 10px 5px 35px;
+    float: left;
+}
+
+.recommendBox .recommendOrNot {
+    padding-top: 15px;
+}
+
+.recommendBox img {
+    width: 22px;
+    padding-right: 5px;
+    margin-bottom: -5px;
+}
+
+
+.commentBox {
+    overflow: hidden;
+    height: 90px;
+    padding-top: 30px;
+    padding-left: 40px;
+    margin: 0 auto;
+}
+
+.tabBody .paddingBottom {
+    padding-bottom: 30px;
+}
+
+.contentBodyDetail {
+    margin-right: 20px;
+    padding-top: 10px;
+}
+
+.contentBodyTuple {
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+    .contentBodyTuple .contentBodyHead .notes {
+        float: left;
+        padding: 3px 0 3px 40px;
+        font-size: 12px;
+    }
+
+.detailTupleContent textarea {
+    width: 450px;
+    height: 100px;
+    padding: 5px 8px;
+    border: 1px solid #C6B999;
+}
+
+.detailTupleContent .reminder {
+    padding-left: 420px;
+}
+
+.flagJust input {
+    width: 450px !important;
+}
+
+.tag div {
+    float: left;
+    border: 1px solid #C6B999;
+    color: #AD8763;
+    margin-right: 10px;
+    font-size: 12px;
+    padding: 1px 2px;
+}
+
 
 
 .sidebar {
