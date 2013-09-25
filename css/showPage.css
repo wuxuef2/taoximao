@@ -62,7 +62,7 @@
             }
 
 .baseInformation {
-    width: 670px;
+    width: 710px;
     padding-top: 40px;
 }
 
@@ -205,8 +205,103 @@
     width: 600px;
 }
 
+.menu {
+    padding: 20px 15px 20px 0;
+}
+
+    .menu .menuBody .detailTupleContentLable {
+        width: 500px;
+    }
+
+        .menu .menuBody .detailTupleContentLable div {
+            float: left;
+            padding-right: 5px;
+            width: 120px;
+        }
+
+    .menu .menuBody img {
+        width: 100px;
+    }
+
+.hotelDetail table {
+    border: solid 1px #C6B999;
+    font-size: 13px;
+    width: 630px;
+}
+
+    .hotelDetail table th {
+        border: solid 1px #C6B999;
+        padding: 10px 8px;
+        max-width: 100px;
+        min-width: 30px;
+        text-align: center;
+    }
+
+    .hotelDetail table td {
+        border: solid 1px #C6B999;
+        padding: 10px 8px;
+        max-width: 100px;
+        min-width: 30px;
+        text-align: center;        
+        background: url("../img/bg.png") repeat scroll 0 0 transparent;
+    }
+
+.calendar table {
+    border: solid 2px white;
+    width: 630px;
+    font-size: 18px;
+}
+
+    .calendar table th {
+        border: solid 2px white;
+        width: 85px;
+        background: url("../img/transparency_dark.png")  repeat scroll 0 0 transparent;
+        padding: 15px;
+        text-align: center;
+        color: white;
+    }
+
+    .calendar table td {
+        border: solid 2px white;
+        width: 85px;
+        padding: 15px;
+        text-align: center;
+        color: #926134;
+    }
+
+.calendar .gooddayBox {
+    float: right;
+    padding-right: 40px;
+    padding-top: 5px;
+}
+
+    .calendar .gooddayBox .goodday {
+        width: 30px;
+        height: 13px;
+    }
+
+.contentBody .contentBodyHead {    
+    font-size: 16px;
+}
+
+.contentBody .contentBodyDetail {
+    padding-left: 30px;
+    font-size: 15px;
+    color: #A18878;
+}
+
+.byBus .busTurple .detailTupleTitle {
+    float: left;
+}
+
+.byBus .busTurple .detailTupleContent {
+    float: left;
+    width: 430px;
+}
+
+
 .sidebar {
-    width: 240px;
+    width: 225px;
     padding-left: 20px;
 }
 
