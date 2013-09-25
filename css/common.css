@@ -21,6 +21,11 @@ body {
 .center {
     margin: 0 auto;
 }
+
+.textCenter {
+    text-align: center;
+}
+
 .redFont {
     color: #E53828;
 }
@@ -82,6 +87,10 @@ body {
 
 .lineBG {
     background: url("../img/small_line.png") repeat-x scroll;
+}
+
+.bottomLineBG {
+    background: url("../img/small_line.png") repeat-x bottom left scroll;
 }
 
 .icon {
