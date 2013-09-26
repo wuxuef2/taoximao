@@ -325,16 +325,36 @@ body {
         width: 600px;
     }
 
+    
+
 
     .footer .searchBox img {
         width: 960px;
     }
 
     .footer .searchBox .footerSearchBox select {
-        font-size: 15px;
         padding: 4px 8px;
-        margin-right: 6px;
+        font-size: 15px;
+        margin: 0px;
     }
+
+    .footer .searchBox .footerSearchBox .selectInput {
+        margin-left: 8px;
+    }
+
+    .footer .searchBox .footerSearchBox .footerSearchSelectionBox {
+        border-right: 1px solid gray;
+        border-left: 1px solid gray;
+        width: 567px;
+        height: 70px;
+        border-bottom: 1px solid gray;
+    }
+
+    .footer .searchBox .footerSearchBox .footerSearchBoxButtonBox {
+        position: relative;
+        top: -40px;
+    }
+
 
     .footer .moreBox {
         margin-top: -20px;

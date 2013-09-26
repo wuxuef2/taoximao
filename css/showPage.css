@@ -310,6 +310,14 @@
     width: 12px;
 }
 
+.bigStarBox img {
+    width: 18px;
+}
+
+.bigStarBox {
+    font-size: 18px;
+}
+
 .detailStar {
     float: left;
 }
