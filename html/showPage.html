@@ -15,7 +15,7 @@
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/common.js"></script>
     <script type="text/javascript" src="../js/showImg.js"></script>
-    <script type="text/javascript" src="../js/showPage.html"></script>
+    <script type="text/javascript" src="../js/showPage.js"></script>
     
 </head>
 <body>
@@ -197,8 +197,8 @@
                         </div>
                     </div>
                     <div class="buttonBox">
-                        <input type="button" value="免费预约" />
-                        <input type="button" value="收藏" />
+                        <input class="btn_bg" type="button" value="免费预约" />
+                        <input class="btn_bg marginLeft" type="button" value="收藏" />
                     </div>
                     <div class="shareBox lightDetailColor right">
                         分享到：
@@ -278,16 +278,18 @@
                             </div>
                             <div class="book right">
                                 <img src="../img/corner.png" alt=" " />
-                                <div class="bookBox overflow">
+                                <div class="bookBox overflow lightDetailColor">
                                     <div class="overflow">
                                         <p class="right">请输入手机完成免费预约。</p>
                                    </div>
                                     <div>
                                         <p>下订即可获得所示&nbsp;&nbsp;超值大礼包哦！</p>
-                                        <input type="text" />
+                                        <div class="boxPadding">
+                                            <input class="verificationCodeInput " type="text" />
+                                        </div>
                                     </div>
-                                    <div>
-                                        <input type="button" value="免费预约" />
+                                    <div class="buttonBox">
+                                        <input class="btn_bg" type="button" value="免费预约" />
                                     </div>
                                 </div>
                             </div>
@@ -447,7 +449,7 @@
                                   <option value="11">11</option>
                                   <option value ="12">12</option>
                                 </select>
-                                <button class="simpleButton">查看档期</button>
+                                <button class="button">查看档期</button>
                             </div>
                             <div class="gooddayBox">
                                 <div class="transparencyBrown goodday left">&nbsp;</div>
@@ -560,8 +562,9 @@
                                 <div><input class="inputText" type="text" value="终点" /></div>
                             </div>
                             <div class="buttonBox left paddingLeft">
-                                <input type="button" value="查公交" />
-                                <input type="button" value="出租/开车" />
+                                <span class="lightDetailColor">&nbsp;&nbsp;&nbsp;—&nbsp;&nbsp;&nbsp;</span>
+                                <input class="btn_bg" type="button" value="查公交" />
+                                <input class="btn_bg marginLeft" type="button" value="出租/开车" />
                             </div>
                         </div>
                     </div>             
@@ -663,8 +666,8 @@
                                         </div>
                                     </div>                                
                                 </div>
-                                <div class="commentBox verticalLine">
-                                    <input type="button" value="我要点评" />
+                                <div class="commentBox verticalLine centerText">
+                                    <input class="btn_bg" type="button" value="我要点评" />
                                     <div>
                                         已有<span class="highlight">1</span>条点评
                                     </div>
@@ -787,8 +790,10 @@
                                 </div>
                                 
                                 <div class="buttonBox">
-                                    <input type="button" value="提交" />
-                                    <input type="button" value="取消" />
+                                    <span class="lightDetailColor">—————&nbsp;&nbsp;&nbsp;</span>
+                                    <input class="btn_bg" type="button" value="提交" />
+                                    <input class="btn_bg marginLeft" type="button" value="取消" />
+                                    <span class="lightDetailColor">&nbsp;&nbsp;&nbsp;—————</span>
                                 </div>
                             </div>
                         </div>
@@ -890,7 +895,7 @@
 
                             </div>
                             <div class="buttonBox">
-                                <input type="button" value="查看大图" />
+                                <input class="btn_bg" type="button" value="查看大图" />
                             </div>
                         </div>                        
                     </div>
@@ -907,8 +912,8 @@
                         <input type="text" value="终点" />
                     </div>
                     <div class="buttonBox">
-                        <input type="button" value="查公交" />
-                        <input type="button" value="出租/开车" />
+                        <input class="small_btn_bg" type="button" value="查公交" />
+                        <input class="small_btn_bg" type="button" value="出租/开车" />
                     </div>
                 </div>
             </div>
@@ -930,7 +935,7 @@
                     </select>
                 </div>
                 <div class="buttonBox">
-                    <input type="button" value="立即提交" />
+                    <input class="btn_bg" type="button" value="立即提交" />
                 </div>
             </div>
         </div>
@@ -1016,7 +1021,7 @@
                     </div>
                     <div class="callback right overflow moreRightTuple">
                         服务监督
-                        <input type="button" value="提交意见" />
+                        <input class="btn_bg" type="button" value="提交意见" />
                     </div>
                 </div>
             </div>

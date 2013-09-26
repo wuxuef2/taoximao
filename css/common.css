@@ -21,6 +21,9 @@ body {
 .center {
     margin: 0 auto;
 }
+.centerText {
+    text-align: center;
+}
 
 .textCenter {
     text-align: center;
@@ -63,6 +66,10 @@ body {
 
 .paddingLeft {
     padding-left: 8px;
+}
+
+.marginLeft {
+    margin-left: 20px;
 }
 
 .paddingRight {
@@ -125,6 +132,53 @@ body {
     color: #A18878;
 }
 
+.button {
+    border: 1px solid #c6B999;
+    padding: 7px 10px;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+}
+
+.btn_bg {  
+    padding: 15px 34px; 
+    background:url("../img/button.png") scroll no-repeat transparent;  
+    -moz-background-size: 100% 100%;  
+    -o-background-size: 100% 100%;  
+    -webkit-background-size: 100% 100%;  
+    background-size: 100% 100%;  
+    -moz-border-image: url(./btn.png) 0;  
+    background-repeat:no-repeat\9;  
+    background-image:none\9;  
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/button.png', sizingMethod='scale')\9;  
+    border: aliceblue;
+    text-align: center;
+    cursor: pointer;
+}
+
+.small_btn_bg {  
+    padding: 15px 30px; 
+    background:url("../img/button.png") scroll no-repeat transparent;  
+    -moz-background-size: 100% 100%;  
+    -o-background-size: 100% 100%;  
+    -webkit-background-size: 100% 100%;  
+    background-size: 100% 100%;  
+    -moz-border-image: url(./btn.png) 0;  
+    background-repeat:no-repeat\9;  
+    background-image:none\9;  
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/button.png', sizingMethod='scale')\9;  
+    border: aliceblue;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.buttonBox {
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
 
     .telephone img {
         height: 27px;
@@ -326,7 +380,7 @@ body {
 
             .footer .moreBox .moreRight .callback {
                 border: 1px solid yellow;
-                padding: 3px;
+                padding: 8px 5px 5px 8px;
             }
 
 .copyright {
