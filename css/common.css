@@ -130,6 +130,7 @@ body {
     padding: 1px 10px;
     border: solid #C6B999 1px;
     color: #A18878;
+    height: 23px;
 }
 
 .button {
@@ -265,7 +266,7 @@ body {
             }
 
             .logoBox .search .searchImg img {
-                width: 18px;
+                width: 17px;
                 cursor: pointer;
             }
 

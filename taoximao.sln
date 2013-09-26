@@ -5,20 +5,27 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "taoximao", ".", "{1A9A6923-
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
 		Debug.AspNetCompiler.VirtualPath = "/taoximao"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\GitHub\taoximao\"
+		Debug.AspNetCompiler.PhysicalPath = "..\taoximao\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\taoximao\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/taoximao"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\GitHub\taoximao\"
+		Release.AspNetCompiler.PhysicalPath = "..\taoximao\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\taoximao\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "54373"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D2D33B2A-B01D-46F8-888D-8C03C3EDCA1A}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
 Global
