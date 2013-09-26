@@ -125,6 +125,18 @@ body {
     color: #A18878;
 }
 
+
+    .telephone img {
+        height: 27px;
+    }
+
+    .telephone .phoneNumber {
+        position: relative;
+        top: -33px;
+        left: 35px;
+        font-size: 20px;
+    }
+
 /**************************** common use *****************************/
 /**************************** head ***********************/
     .headImg img {
@@ -220,17 +232,6 @@ body {
         width: 280px;
         padding-top: 4px;
     }
-
-        .logoBox .taoximaoDown .telephone img {
-            height: 27px;
-        }
-
-        .logoBox .taoximaoDown .telephone .phoneNumber {
-            position: relative;
-            top: -33px;
-            left: 35px;
-            font-size: 20px;
-        }
 
 .nav {
     background-color: #6A3906;

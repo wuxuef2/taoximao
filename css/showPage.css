@@ -64,7 +64,7 @@
     padding-top: 40px;
 }
 
-.baseInformation {
+.content .baseInformation {
     width: 710px;
 }
 
@@ -488,6 +488,86 @@
         border: solid #C6B999 1px;
         color: #A18878;
         margin-bottom: 5px;
+    }
+
+.footer {
+    padding-top: 40px;
+}
+
+    .footer .searchBox .footerSearchBox {
+        position: relative;
+        top: -120px;
+        left: 300px;
+    }
+
+
+    .footer .searchBox img {
+        width: 960px;
+    }
+
+    .footer .searchBox .footerSearchBox select {
+        font-size: 15px;
+        padding: 4px 8px;
+        margin-right: 6px;
+    }
+
+    .footer .moreBox {
+        margin-top: -20px;
+        padding-bottom: 40px;
+    }
+
+        .footer .moreBox .moreBoxLeft {
+            width: 590px;
+            float: left;
+        }
+
+            .footer .moreBox .moreBoxLeft .moreFixWidth {
+                width: 245px;
+            }
+
+            .footer .moreBox .moreBoxLeft .innerMapCol {
+                width: 56px;
+                float: left;
+                padding: 15px 12px 0 26px;
+
+            }
+
+        .footer .moreBox .moreRight {
+            padding-right: 30px;
+            font-size: 15px;
+            padding-left: 660px;
+        }
+
+            .footer .moreBox .moreRight .shell {
+                border-left: 1px solid #C6B999;
+            }
+
+            .footer .moreBox .moreRight .moreRightTuple {
+                float: right;
+                overflow: visible;   
+            }
+
+            .footer .moreBox .moreRight .slogan {
+                text-align: right;
+                padding-bottom: 15px;
+                margin-top: -20px;
+            }
+
+            .footer .moreBox .moreRight .callback {
+                border: 1px solid yellow;
+                padding: 3px;
+            }
+
+.copyright {
+    height: 16px;
+    text-align: center;
+    background-color: #6A3906;
+    color: white;
+    padding: 15px 5px;
+}
+
+    .copyright .myName {
+        padding-right: 50px;
     }
 
 
