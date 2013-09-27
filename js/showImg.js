@@ -12,7 +12,7 @@ var addLoadEvent = function (func){
 			func();
 		}
 	}
-} ;
+};
 
 var moveElement = function (elementID, final_x, final_y, interval) {
 	if (! document.getElementById) {

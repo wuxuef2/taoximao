@@ -3,11 +3,8 @@
 };
 
 var setHeadImgWidth = function () {
-    var screenWidth = document.body.clientWidth;
-    //alert(screenWidth);
-    //$("#headImg").attr("width", screenWidth + "px");
+    var screenWidth = document.body.clientWidth;    
     $("#headImg").attr("width", screenWidth + "px");
-    //document.getElementById("headImg").setAttribute("width", screenWidth + "px");
     document.getElementById("headImg").setAttribute("min-width", "960px");
 };
 
