@@ -1,4 +1,4 @@
-var $ = function (id) { 
+var getElement = function (id) { 
 	return document.getElementById(id);
 } ;
 
@@ -57,24 +57,24 @@ var moveElement = function (elementID, final_x, final_y, interval) {
 } ;
 
 var classNormal = function (iFocusBtnID){
-	var iFocusBtns= $(iFocusBtnID).getElementsByTagName('li');
+	var iFocusBtns= getElement(iFocusBtnID).getElementsByTagName('li');
 	for (var i = 0; i < iFocusBtns.length; ++ i) {
 		iFocusBtns[i].className='normal left';
 	}
 } ;
 
 var classCurrent = function (iFocusBtnID, n){
-	var iFocusBtns= $(iFocusBtnID).getElementsByTagName('li');
+	var iFocusBtns= getElement(iFocusBtnID).getElementsByTagName('li');
 	iFocusBtns[n].className='current left';
 } ;
 
 var iFocusChange = function () {
-	if (! $('showImg')) {
+	if (! getElement('showImg')) {
 		return false;
 	}
-	$('showImg').onmouseover = function(){atuokey = true};
-	$('showImg').onmouseout = function(){atuokey = false};
-	var iFocusBtns = $('imgThumb').getElementsByTagName('li');
+	getElement('showImg').onmouseover = function(){atuokey = true};
+	getElement('showImg').onmouseout = function(){atuokey = false};
+	var iFocusBtns = getElement('imgThumb').getElementsByTagName('li');
 	var listLength = iFocusBtns.length;
 	iFocusBtns[0].onmouseover = function() {
 		moveElement('imgList', 0, 0, 5);
