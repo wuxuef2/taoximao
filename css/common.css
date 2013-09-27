@@ -50,6 +50,9 @@ body {
 .darkDetailColor {
     color: #A18878;
 }
+.normalColor {
+    color: #40220F;
+}
 
 .borderBottom {
     border-bottom: solid 3px #C6B999;
@@ -135,10 +138,12 @@ body {
 
 .button {
     border: 1px solid #c6B999;
-    padding: 7px 10px;
+    padding: 5px 10px;
     text-align: center;
     cursor: pointer;
     background-color: white;
+    *padding: 4px 4px 0px 4px;
+    *margin-left: 15px;
 }
 
 .btn_bg {  
@@ -155,6 +160,8 @@ body {
     border: aliceblue;
     text-align: center;
     cursor: pointer;
+    *border: none;
+    *padding: 15px 18px;
 }
 
 .small_btn_bg {  
@@ -172,13 +179,19 @@ body {
     text-align: center;
     cursor: pointer;
     font-size: 12px;
+    *border: none;
+    *padding: 15px 15px;
+}
+
+.buttonLine {
+   *position: relative;
+   *top: -15px;
+   width: 100%;
 }
 
 .buttonBox {
     margin: 0 auto;
     padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
 }
 
     .telephone img {
@@ -263,11 +276,14 @@ body {
                 padding: 4px 4px 0 4px;
                 border: solid 1px #C6B999;
                 background-color: white;
+                *margin-left: -4px;
+                *margin-top: 1px;
             }
 
             .logoBox .search .searchImg img {
                 width: 17px;
-                cursor: pointer;
+                cursor: pointer;   
+                *margin: 2px 1px;
             }
 
             .logoBox .search .searchTip {
@@ -311,7 +327,7 @@ body {
 
                 .nav ul li a:hover {
                     background-color: #885C1E;
-                    text-decoration: inherit !important;
+                    text-decoration: none !important;
                 }
 /********************************** footer ******************************************/
 
@@ -341,6 +357,7 @@ body {
 
     .footer .searchBox .footerSearchBox .selectInput {
         margin-left: 8px;
+        *margin-left: 27.1px;
     }
 
     .footer .searchBox .footerSearchBox .footerSearchSelectionBox {
@@ -369,6 +386,7 @@ body {
 
             .footer .moreBox .moreBoxLeft .moreFixWidth {
                 width: 245px;
+                *width: 230px;
             }
 
             .footer .moreBox .moreBoxLeft .innerMapCol {
@@ -397,12 +415,18 @@ body {
                 text-align: right;
                 padding-bottom: 15px;
                 margin-top: -20px;
+                width: 240px;
             }
 
             .footer .moreBox .moreRight .callback {
                 border: 1px solid yellow;
                 padding: 8px 5px 5px 8px;
             }
+
+                .footer .moreBox .moreRight .callback span {
+                    *position: relative;
+                    *top: -18px;
+                }
 
 .copyright {
     height: 16px;

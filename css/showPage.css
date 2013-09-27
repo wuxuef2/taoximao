@@ -11,7 +11,6 @@
 
     .imgSlider .sliderBox .showImg {
         width: 470px;
-        height: 300px;
     }
 
     .imgSlider .sliderBox .detailBox {
@@ -137,6 +136,7 @@
         .baseInformation .tabBody .privilegeHeader {
             overflow: hidden;
             width: 340px;
+            *width: 420px;
         }
 
             .baseInformation .tabBody .privilegeHeader .bookFood {
@@ -296,8 +296,9 @@
 }
 
 .contentBody .contentBodyDetail {
-    font-size: 15px;
+    font-size: 14px;
     color: #A18878;
+    padding-left: 20px;
 }
 
 .byBus .busTurple .detailTupleTitle {
@@ -510,5 +511,16 @@
         margin-bottom: 5px;        
         height: 23px;
     }
+
+/******************************* hack ************************************
+.hotelDetail table th { 
+    *width: expression( this.scrollWidth > 100 ? "100px" : "auto" );
+    *width: expression( this.scrollWidth < 30 ? "30px" : "auto" ); 
+}
+
+.hotelDetail table td { 
+    *width: expression( this.scrollWidth > 100 ? "100px" : "auto" );
+    *width: expression( this.scrollWidth < 30 ? "30px" : "auto" ); 
+}*/
 
 
