@@ -1,8 +1,5 @@
-var getElement = function (id) { 
-	return document.getElementById(id);
-} ;
-
-var addLoadEvent = function (func){
+// add event to the window.onload
+var addLoadEvents = function (func){
 	var oldonload = window.onload;
 	if (typeof window.onload != 'function') {
 		window.onload = func;
@@ -13,97 +10,75 @@ var addLoadEvent = function (func){
 		}
 	}
 };
+// change img basing on the img user's mouse
+var slideImageEvents = function () {
+	$("#nextImg").bind("click", preImgClick);
+	$("#preImg").bind("click", nextImgClick);
 
-var moveElement = function (elementID, final_x, final_y, interval) {
-	if (! document.getElementById) {
-		return false;
-	}
-	if (! document.getElementById(elementID)) {
-		return false;
-	}
-	var elem = document.getElementById(elementID);
-	clearTimeout(elem.movement);
-	if (! elem.style.left) {
-		elem.style.left = "0px";
-	}
-	if (! elem.style.top) {
-		elem.style.top = "0px";
-	}
-	var xpos = parseInt(elem.style.left);
-	var ypos = parseInt(elem.style.top);
-	if (xpos == final_x && ypos == final_y) {
-		return true;
-	}
-	if (xpos < final_x) {
-		var dist = Math.ceil((final_x - xpos) / 10);
-		xpos = xpos + dist;
-	}
-	if (xpos > final_x) {
-		var dist = Math.ceil((xpos - final_x) / 10);
-		xpos = xpos - dist;
-	}
-	if (ypos < final_y) {
-		var dist = Math.ceil((final_y - ypos) / 10);
-		ypos = ypos + dist;
-	}
-	if (ypos > final_y) {
-		var dist = Math.ceil((ypos - final_y) / 10);
-		ypos = ypos - dist;
-	}
-	elem.style.left = xpos + "px";
-	elem.style.top = ypos + "px";
-	var repeat = "moveElement('" + elementID + "'," + final_x + "," + final_y + "," + interval + ")";
-	elem.movement = setTimeout(repeat, interval);
+	var focusThumbs = $("#imgThumb li");
+	var length = focusThumbs.length;
+	focusThumbs.each(function(index, element) {
+		 element.onmouseover = function (index) {
+		 	// remove the class 'current' of the unselected imgThumb
+			$("#imgThumb li").removeClass("current");
+			// add class 'current' to the selected imgThumb
+			element.className = "current left";
+			// change the img to display
+			var imgDisplay = $("#imgDisplay img");
+			var curImgSrc = element.firstChild.src;
+			var preImgSrc = imgDisplay[0].src;
+			if (curImgSrc != preImgSrc) {
+				imgDisplay[0].src = curImgSrc;
+			}
+		} ;
+	});
 } ;
 
-var classNormal = function (iFocusBtnID){
-	var iFocusBtns= getElement(iFocusBtnID).getElementsByTagName('li');
-	for (var i = 0; i < iFocusBtns.length; ++ i) {
-		iFocusBtns[i].className='normal left';
+var changeDisplayImage = function (k) {
+	var lis = $("#imgThumbList li");
+	for (var i = 0; i < lis.length; ++ i) {
+		lis[i].className = "normal left";
+	}
+	alert(k);
+	lis[k].className = "current left";
+	$("#imgDisplay img")[0].src = lis[k].firstChild.src;
+} ;
+
+var preImgClick = function () {
+	var imgThumbList = $("#imgThumbList>ul");
+	var minLeft = (imgThumbList.children("li").length - 1) * -99;
+	var left = imgThumbList.position().left;
+	if (left > minLeft) {
+		left -= 99;
+		var currentIndex = getCurrentDisplayImageIndex();
+		if (currentIndex >= (-left % 99)) {
+			changeDisplayImage(currentIndex + 1);
+		}
+		imgThumbList.css("left", left + "px");
 	}
 } ;
 
-var classCurrent = function (iFocusBtnID, n){
-	var iFocusBtns= getElement(iFocusBtnID).getElementsByTagName('li');
-	iFocusBtns[n].className='current left';
+var nextImgClick = function () {
+	var imgThumbList = $("#imgThumbList>ul");
+	var left = imgThumbList.position().left;
+	if (left < 0) {
+		left += 99;
+		var currentIndex = getCurrentDisplayImageIndex();
+		if (currentIndex <= (-left % 99) + 300) {
+			changeDisplayImage(currentIndex - 1);
+		}
+		imgThumbList.css("left", left + "px");
+	}
 } ;
 
-var iFocusChange = function () {
-	if (! getElement('showImg')) {
-		return false;
-	}
-	getElement('showImg').onmouseover = function(){atuokey = true};
-	getElement('showImg').onmouseout = function(){atuokey = false};
-	var iFocusBtns = getElement('imgThumb').getElementsByTagName('li');
-	var listLength = iFocusBtns.length;
-	iFocusBtns[0].onmouseover = function() {
-		moveElement('imgList', 0, 0, 5);
-		classNormal('imgThumb');
-		classCurrent('imgThumb', 0);
-	}
-	if (listLength>=2) {
-		iFocusBtns[1].onmouseover = function() {
-			moveElement('imgList', 0, -306, 5);
-			classNormal('imgThumb');
-			classCurrent('imgThumb', 1);
+var getCurrentDisplayImageIndex = function () {
+	var lis = $("#imgThumbList li");
+	for (var i = 0; i < lis.length; ++ i) {
+		if (lis[i].className.indexOf("current") != -1) {
+			return i;
 		}
 	}
-	if (listLength>=3) {
-		iFocusBtns[2].onmouseover = function() {
-			moveElement('imgList', 0, -612, 5);
-			classNormal('imgThumb');
-			classCurrent('imgThumb', 2);
-		}
-	}
-	if (listLength>=4) {
-		iFocusBtns[3].onmouseover = function() {
-			moveElement('imgList', 0, -918, 5);
-			classNormal('imgThumb');
-			classCurrent('imgThumb', 3);
-		}
-	}
+	return 0;
 } ;
 
-
-var atuokey = false;
-addLoadEvent(iFocusChange);
+addLoadEvents(slideImageEvents);
